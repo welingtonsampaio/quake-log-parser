@@ -29,14 +29,24 @@ $ yarn install
 ```
 
 
-## Instalando o parser
+## Executando o parser
 
 [TO-DO]
 
 
 ## Rodando o Webserver
 
-[TO-DO]
+Execute no terminal na pasta do projeto:
+
+```bash
+$ yarn start
+```
+
+Você pode customizar a porta do servidor usando a variável de ambiente `PORT`, veja abaixo:
+
+```bash
+$ PORT=8080 yarn start
+```
 
 
 ## Conduta de código
@@ -46,5 +56,10 @@ $ yarn install
 
 ## Testes
 
-[TO-DO]
+O projeto está testado utilizando `jasmine`(docs) e caverage por `istanbul`. Sigar os comandos abaixo para executar os testes unitários:
 
+```bash
+$ yarn test
+```
+
+Este comando irá criar uma pasta `coverage` na raiz do projeto, com os detalhes da cobertura de codigo.
