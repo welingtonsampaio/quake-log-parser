@@ -10,8 +10,8 @@ Este projeto visa testar as habilidades de um programador backend, analisando pa
 
 Conforme documento `arquivo`, o projeto deverá ser feito em duas etapas distintas. Sendo :
 
-1- Parser do log para a extração de dados.
-2- API para expor os dados através de requisição HTTP simples.
+- Parser do log para a extração de dados.
+- API para expor os dados através de requisição HTTP simples.
 
 
 ## Requisitos
