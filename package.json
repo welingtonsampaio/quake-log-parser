@@ -1,0 +1,14 @@
+{
+  "name": "luizalabs-quake-log-parser",
+  "version": "0.1.0",
+  "description": "parser para arquivos de log do jogo Quake e webserver com API de consulta",
+  "author": "Welington Sampaio <welington.sampaio@icloud.com>",
+  "main": "index.js",
+  "license": "private",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {}
+}
