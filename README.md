@@ -63,3 +63,9 @@ $ yarn test
 ```
 
 Este comando irá criar uma pasta `coverage` na raiz do projeto, com os detalhes da cobertura de codigo.
+
+Para desenvolvimento contínuo é recomendado que utilize o `watcher` para que os testes sejam executados automaticamente conforme são alterados, para isso use o comando abaixo:
+
+```bash
+$ yarn run watch:spec
+```

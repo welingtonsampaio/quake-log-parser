@@ -7,13 +7,15 @@
   "license": "private",
   "scripts": {
     "start": "node index.js",
-    "test": "istanbul cover node_modules/jasmine/bin/jasmine.js"
+    "test": "istanbul cover node_modules/jasmine/bin/jasmine.js",
+    "watch:spec": "nodemon -w spec -w bin -w server node_modules/jasmine/bin/jasmine.js --random=true"
   },
   "dependencies": {
     "hapi": "^16.5.2"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
-    "jasmine": "^2.8.0"
+    "jasmine": "^2.8.0",
+    "nodemon": "^1.11.0"
   }
 }
