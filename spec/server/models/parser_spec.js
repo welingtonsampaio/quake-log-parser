@@ -14,8 +14,8 @@ describe('Parser', () => {
         //console.log(line);
       }
     })
-    expect(parser.toObject().length).toEqual(1);
-    expect(parser.toObject()[0]).toEqual(jasmine.objectContaining({
+    expect(Object.keys(parser.toObject())).toEqual(['game_0']);
+    expect(parser.toObject().game_0).toEqual(jasmine.objectContaining({
       hostname: 'Code Miner Server',
       version: 'ioq3 1.36 linux-x86_64 Apr 12 2009',
       total_kills: 4,

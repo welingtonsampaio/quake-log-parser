@@ -76,9 +76,9 @@ class Parser {
   }
 
   toObject () {
-    let ret = [];
-    this.gameCollection.forEach((item) => {
-      ret.push(item.toObject());
+    let ret = {};
+    this.gameCollection.forEach((item, idx) => {
+      ret[`game_${parseInt(idx) - 1}`] = item.toObject();
     });
     return ret;
   }
