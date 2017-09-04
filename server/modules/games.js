@@ -4,6 +4,7 @@ class Game {
    */
   list (parser){
     return (request, reply) => {
+      reply(parser.toObject());
     }
   }
 
@@ -12,6 +13,13 @@ class Game {
    */
   show (parser) {
     return (request, reply) => {
+      let id = parseInt(request.params.id) + 1;
+      let game = parser.gameCollection.get(id.toString());
+      if (game) {
+        reply(game.toObject());
+      } else {
+        reply({message: 'game not found'}).code(404);
+      }
     }
   }
 }
