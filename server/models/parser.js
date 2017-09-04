@@ -47,9 +47,6 @@ class Parser {
     return new Promise((resolve, reject) =>{
       lineReader.eachLine(file, (line, last) => {
         this.parseLine(line);
-        if (last) {
-          resolve();
-        }
       });
     });
   }
