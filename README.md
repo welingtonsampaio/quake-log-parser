@@ -14,6 +14,13 @@ Conforme documento `arquivo`, o projeto deverá ser feito em duas etapas distint
 - API para expor os dados através de requisição HTTP simples.
 
 
+## Solução proposta
+
+Percebi que o log segue uma linha lógica contendo uma palavra-chave para cada linha de log, e sempre no mesmo index da linha no caso o index `7`. Com isso resolvi criar um objeto contendo a palavra chave e seu respectivo parser(utilizei regex).
+
+Após validar que o parser estava funcionando, atrvés dos testes. Foi só expor para a API os resultados.
+
+
 ## Requisitos
 
 Para a utilização deste projeto, você precisará ter instalado em seu computador:
