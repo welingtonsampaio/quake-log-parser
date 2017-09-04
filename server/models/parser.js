@@ -1,7 +1,6 @@
 const lineReader = require('line-reader');
 
 const Game = require('./game');
-const Item = require('./item');
 const Player = require('./player');
 
 const models = {
