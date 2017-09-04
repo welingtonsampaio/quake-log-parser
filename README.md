@@ -31,7 +31,13 @@ $ yarn install
 
 ## Executando o parser
 
-[TO-DO]
+O parser pode ser executado de duas formas, dentro do código ou por terminar para ter uma saida em json.
+
+Para executar o parser no terminal você precisará chamar o binário que se encontra dentro da pasta `bin` com o nome de `parser`, e em seguida passar o local do arquivo de log como no exemplo abaixo:
+
+```bash
+$ bin/parser data/games.log
+```
 
 
 ## Rodando o Webserver
@@ -47,11 +53,6 @@ Você pode customizar a porta do servidor usando a variável de ambiente `PORT`,
 ```bash
 $ PORT=8080 yarn start
 ```
-
-
-## Conduta de código
-
-[TO-DO]
 
 
 ## Testes
