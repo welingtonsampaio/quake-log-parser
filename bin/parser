@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var Parser = require('./../server/models/parser')
+    , parser = new Parser();
+
+parser.fromFile(process.argv[2]).then((err) => {
+  if (err) throw err;
+  console.log(parser.toObject());
+});

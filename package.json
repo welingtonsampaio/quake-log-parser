@@ -11,7 +11,8 @@
     "watch:spec": "nodemon -w spec -w bin -w server node_modules/jasmine/bin/jasmine.js --random=true"
   },
   "dependencies": {
-    "hapi": "^16.5.2"
+    "hapi": "^16.5.2",
+    "line-reader": "^0.4.0"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
