@@ -1,8 +1,16 @@
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 
-server.connection({ port: 8888 });
+// Parser loads
+const Parser = require('./models/parser');
+const parser = new Parser();
+parser.fromFile(__dirname + '/../data/games.log');
 
-require('./routes')(server)
+server.connection({
+  host: process.env.HOST || '0.0.0.0',
+  port: process.env.PORT || 3000
+});
+
+require('./routes')(server, parser);
 
 module.exports = server;

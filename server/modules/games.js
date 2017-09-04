@@ -1,11 +1,18 @@
 class Game {
-  list (request, reply) {
-
+  /**
+   * Show all games parsed from log
+   */
+  list (parser){
+    return (request, reply) => {
+    }
   }
 
-  //handler: (request, reply) => reply({ ping: 'pong' })
-  show (request, reply) {
-
+  /**
+   * Expose one game and print your date
+   */
+  show (parser) {
+    return (request, reply) => {
+    }
   }
 }
 
